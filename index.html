@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/rs_school_js.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  <title>CV</title>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#english" class="nav-link">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main-container">
+        <section class="section section-profile" id="profile">
+          <img
+            src="./assets/img/avatar.jpg"
+            class="section-profile-logo"
+            alt="Zhuravlev-Andrey"
+          />
+          <div class="section-profile-title">
+            <h1 class="section-title main-title">Zhuravlev Andrey</h1>
+            <h3 class="section-subtitle">Junior Front-End Developer</h3>
+          </div>
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="section-list">
+            <li class="section-item contacts-item">Russia, Omsk</li>
+            <li class="section-item contacts-item">
+              Email:
+              <a href="mailto:zhuravlev112358@mail.ru" title="email"
+                >zhuravlev112358@mail.ru</a
+              >
+            </li>
+            <li class="section-item contacts-item">
+              Github:
+              <a href="https://github.com/Zhuravlev-Andrey" title="github"
+                >Zhuravlev-Andrey</a
+              >
+            </li>
+            <li class="section-item contacts-item">
+              Discord:
+              <a href="#" title="github"
+                >@Zhuravlev-Andrey</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p>
+            In my life I have already gained experience in work and teaching, and I decided to try something new for myself. It was a great discovery for me how much joy and satisfaction writing code and solving complex tasks can bring me. Therefore, in the near future, I decided to devote all my free time to learning how to program.
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="section-list">
+            <li class="section-item">
+              HTML:<span> (Basic)</span>
+            </li>
+            <li class="section-item">
+              CSS:<span> (Basic)</span>
+            </li>
+            <li class="section-item">
+              JavaScript:<span> (Basic)</span>
+            </li>
+            <li class="section-item">Git, GitHub:<span> (Basic)</span></li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code</h2>
+          <pre class="pre"><code>function multiply(a, b){
+            return (a * b);
+          }</code></pre>
+        </section>
+        <section class="section" id="courses">
+          <h2 class="section-title">Courses</h2>
+          <ul class="section-list">
+            <li class="section-item">
+              Code-basics<span> - HTML для начинающих</span>
+            </li>
+            <li class="section-item">
+              Code-basics<span> - CSS для начинающих</span>
+            </li>
+            <li class="section-item">
+              Code-basics<span> - JavaScript для начинающих</span>
+            </li>
+            <li class="section-item">
+              Sololearn<span> - HTML, CSS, JavaScript </span>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="projects">
+          <h2 class="section-title">Projects</h2>
+          <ul class="section-list">
+            <li class="section-item">
+              <a href="https://zhuravlev-andrey.github.io/rsschool-cv/cv">CV</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section section-education" id="education">
+          <h2 class="section-title">Education</h2>
+          <p>Siberian State University of Physical Culture and Sports</p>
+        </section>
+        <section class="section section-english" id="english">
+          <h2 class="section-title">English</h2>
+          <p>A1 - Beginner и Elementary</p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div>
+          © 2022
+          <a href="https://github.com/Zhuravlev-Andrey" class="github nav-link"
+            >Zhuravlev-Andrey</a
+          >
+        </div>
+        <a href="https://rs.school/js/" class="rss"></a>
+      </div>
+    </footer>
+  </body>
 </html>
