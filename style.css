@@ -48,32 +48,12 @@
     color: #fff; 
   }
   
-  .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 12px;
-    bottom: -5px;
+  .nav-link:hover {
     width: calc(100% - 24px);
-    height: 2px;
-    background-color: #fff;
-    opacity: 0;
+    color: #000;
+    margin-bottom: -5px;
+    width: calc(100% - 24px);
     transition: .5s;
-  }
-  
-  .nav-link:hover::after {
-    opacity: 1;
-    animation-name: slidein;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes slidein {
-    from {
-      width: 0;
-    }
-    to {
-      width: calc(100% - 24px);
-    }
   }
   
   .main {
