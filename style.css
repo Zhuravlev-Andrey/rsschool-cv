@@ -42,38 +42,18 @@
     position: relative;
     padding: 0 12px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     line-height: 50px;
     color: #fff; 
   }
   
-  .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 12px;
-    bottom: -5px;
+  .nav-link:hover {
     width: calc(100% - 24px);
-    height: 2px;
-    background-color: #fff;
-    opacity: 0;
+    color: #000;
+    margin-bottom: -5px;
+    width: calc(100% - 24px);
     transition: .5s;
-  }
-  
-  .nav-link:hover::after {
-    opacity: 1;
-    animation-name: slidein;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes slidein {
-    from {
-      width: 0;
-    }
-    to {
-      width: calc(100% - 24px);
-    }
   }
   
   .main {
@@ -112,7 +92,7 @@
     justify-content: space-around;
     width: 100%;
     padding: 50px 30px 35px;
-    border-bottom: 15px solid #77a0c2;
+    border-bottom: 10px solid #77a0c2;
   }
   
   .pre {
@@ -166,12 +146,6 @@
     object-fit: cover;
     border-radius: 33%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .6);
-    filter: grayscale(0.2) brightness(1.05);
-    transition: .3s;
-  }
-  
-  .section-profile-logo:hover {
-    filter: none;
   }
   
   .section-list {
@@ -205,12 +179,12 @@
   
   .section-item a {
     text-decoration: none;
-    color: #77a0c2;
+    color: #c730bf;
     transition: color 0.5s;
   }
   
   .section-item a:hover {
-    color: #4d2323;
+    color: #77a0c2;
   }
   
   .contacts-item:before {
@@ -275,65 +249,5 @@
     width: 121px;
     height: 45px;
     background-image: url("./assets/svg/rs_school_js.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
-  /** Adaptive **/
-
-  @media (max-width: 1440px) {
-    .container {
-      padding: 0 20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .section {
-      width: 100%;
-    }
-    .section-profile {
-      flex-direction: column;
-      align-items: center;
-    }  
-    .section-education {
-      border-bottom: 1px solid #672f2f;
-    }
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .nav {
-      display: none;
-    }
-    .toggle {
-      display: flex;
-    }
-    .nav.collapsed {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 2;
-      display: flex;
-      width: 100%;
-      height: 100vh;
-      min-height: 525px;
-      flex-direction: column;
-      background-color: #829985;
-    }
-    .nav-list.collapsed {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-      padding-top: 50px;
-    }
-  }
-  
-  @media (max-width: 410px) {
-    .main-title {
-      font-size: 24px;
-      letter-spacing: 4px;
-    }  
+    background-size: contain;   
   }
