@@ -31,7 +31,7 @@ function multiply(a, b){
 
 # Completed projects:
 
-[rsschool-cv]("CV")
+[rsschool-cv](https://zhuravlev-andrey.github.io/rsschool-cv/cv "CV")
 
 # Courses:
 
